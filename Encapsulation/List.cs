@@ -16,6 +16,7 @@ namespace Encapsulation
         {
             if (_size == _items.Length)
                 IncreaseCapacity();
+
             _items[_size] = item;
             _size++;
         }

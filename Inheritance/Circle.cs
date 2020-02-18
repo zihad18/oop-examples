@@ -10,6 +10,15 @@ namespace Inheritance
             Radius = radius;
         }
 
+        public Circle(int radius)
+        {
+
+        }
+
+        public Circle(double radius, string color)
+        {
+
+        }
         public double GetArea()
         {
             return Math.PI * Radius * Radius;

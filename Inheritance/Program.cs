@@ -11,6 +11,7 @@ namespace Inheritance
 
             var cylinder = new Cylinder(5.0, 10.0);
             Console.WriteLine(cylinder.GetArea());
+            cylinder.GetCylinderArea();
         }
     }
 }

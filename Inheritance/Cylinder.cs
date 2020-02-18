@@ -2,20 +2,18 @@
 
 namespace Inheritance
 {
-    public class Cylinder
+    public class Cylinder : Circle
     {
-        public double Radius { get; set; }
         public double Height { get; set; }
-
         public Cylinder(double radius, double height)
+        :base(radius, "red")
         {
-            Radius = radius;
             Height = height;
         }
 
-        public double GetArea()
+        public double GetCylinderArea()
         {
-            return Math.PI * Radius * Radius * Height;
+            return base.GetArea() * Height;
         }
     }
 }
