@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inheritance
+namespace Inheritance.Simple
 {
     public class Circle
     {

@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace Inheritance.BeforeAbstract
+{
+    public class Circle : Shape
+    {
+        public float Radius { get; set; }
+        public Circle()
+        {
+            Radius = 1.0f;
+        }
+        public Circle(float radius)
+            :base()
+        {
+            Radius = radius;
+        }
+        public Circle(float radius, string color, bool filled)
+            :base(color, filled)
+        {
+            Radius = radius;
+        }
+        public virtual double GetArea() => Math.PI * Radius * Radius;
+        public override string ToString() => $"{base.ToString()}, Radius = {Radius}";
+    }
+}
