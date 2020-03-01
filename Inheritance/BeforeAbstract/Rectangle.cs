@@ -5,12 +5,13 @@
         public float Width { get; set; }
         public float Length { get; set; }
         public Rectangle()
-            :base()
+            : base()
         {
-
+            Width = 1.0f;
+            Length = 1.0f;
         }
         public Rectangle(float width, float length)
-            :base()
+            : base()
         {
             Width = width;
             Length = length;
@@ -22,6 +23,6 @@
             Length = length;
         }
         public override string ToString() => $"{base.ToString()}, Width={Width}, Length={Length}";
-        public virtual double GetArea() => Width * Length;
+        public double GetArea() => Width * Length;
     }
 }

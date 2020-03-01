@@ -6,16 +6,17 @@ namespace Inheritance.BeforeAbstract
     {
         public float Radius { get; set; }
         public Circle()
+            : base()
         {
             Radius = 1.0f;
         }
         public Circle(float radius)
-            :base()
+            : base()
         {
             Radius = radius;
         }
         public Circle(float radius, string color, bool filled)
-            :base(color, filled)
+            : base(color, filled)
         {
             Radius = radius;
         }

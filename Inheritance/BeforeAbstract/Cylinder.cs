@@ -6,7 +6,7 @@
         public Cylinder()
             :base()
         {
-
+            Height = 1.0f;
         }
         public Cylinder(float radius, float height)
             :base(radius)

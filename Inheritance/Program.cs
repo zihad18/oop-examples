@@ -9,6 +9,7 @@ namespace Inheritance
         {
             var circle1 = new Circle();
             Console.WriteLine(circle1.ToString());
+
             Console.WriteLine(circle1.GetArea());
 
             var circle2 = new Circle(5.0f);
