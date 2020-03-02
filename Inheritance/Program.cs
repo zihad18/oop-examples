@@ -31,6 +31,10 @@ namespace Inheritance
             var cylinder3 = new Cylinder(5.0f, 10.0f, "Blue", true);
             Console.WriteLine(cylinder3.ToString());
             Console.WriteLine(cylinder3.GetArea());
+
+            var rec1 = new Rectangle(1.0f, 2.0f, "Black", false);
+            var recDetails = rec1.ToString();
+            var rec1Area = rec1.GetArea();
         }
     }
 }

@@ -1,0 +1,16 @@
+﻿Basically Abstract class should be used for 'is-a' relationship. 
+If we wantto retrict all the subclasses must have certain functionality, 
+then Abstract class with implementation is recomended. So, overriding already 
+implemented member in the subclasses is not a good practice here.
+==============================================================================
+
+C# Abstract Class Features
+==========================
+An abstract class can inherit from a class and one or more interfaces.
+An abstract class can implement code with non-Abstract methods.
+An Abstract class can have modifiers for methods, properties etc.
+An Abstract class can have constants and fields.
+An abstract class can implement a property.
+An abstract class can have constructors or destructors.
+An abstract class cannot be inherited from by structures.
+An abstract class cannot support multiple inheritance.
