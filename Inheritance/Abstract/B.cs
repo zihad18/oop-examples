@@ -6,7 +6,11 @@ namespace Inheritance.Abstract
     {
         public override void M1()
         {
-            Console.Write("This is the implementation.");
+            Console.WriteLine("M1 Implemented");
+        }
+        public override void M3()
+        {
+            Console.WriteLine("M3 Implemented");
         }
     }
 }

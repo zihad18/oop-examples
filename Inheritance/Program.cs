@@ -1,40 +1,52 @@
-﻿using Inheritance.BeforeAbstract;
+﻿using Inheritance.Relationship;
 using System;
-
+using System.Collections.Generic;
+using ExampleNamespace;
 namespace Inheritance
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var circle1 = new Circle();
-            Console.WriteLine(circle1.ToString());
+            var ex = new Example();
 
-            Console.WriteLine(circle1.GetArea());
+            var list = new List<int> {
+            4, 5 , 6
+            };
 
-            var circle2 = new Circle(5.0f);
-            Console.WriteLine(circle2.ToString());
-            Console.WriteLine(circle2.GetArea());
+            var book = new Book
+            {
+                Id = 1,
+                Title = "C programmin",
+                Isbn = "1235",
+                Authors = new List<Author>
+                {
+                    new Author{ Id = 2, Age = 50.0f, Name = "Name1"},
+                    new Author{ Id = 3, Age = 50.0f, Name = "Name2"},
+                }
+            };
 
-            var circle3 = new Circle(5.0f, "Black", false);
-            Console.WriteLine(circle3.ToString());
-            Console.WriteLine(circle3.GetArea());
+            foreach (var author in book.Authors)
+            {
+                Console.WriteLine(author.Name);
+            }
 
-            var cylinder1 = new Cylinder();
-            Console.WriteLine(cylinder1.ToString());
-            Console.WriteLine(cylinder1.GetArea());
+            // Console.WriteLine(book.Author.Name);
 
-            var cylinder2 = new Cylinder(5.0f, 10.0f);
-            Console.WriteLine(cylinder2.ToString());
-            Console.WriteLine(cylinder2.GetArea());
 
-            var cylinder3 = new Cylinder(5.0f, 10.0f, "Blue", true);
-            Console.WriteLine(cylinder3.ToString());
-            Console.WriteLine(cylinder3.GetArea());
+            //Shape[] shapes = {
+            //    new Circle(5.0f),
+            //    new Cylinder(5.0f,10),
+            //    new Rectangle(2.0f, 3.0f),
+            //    new Square(3.0f)
+            //};
 
-            var rec1 = new Rectangle(1.0f, 2.0f, "Black", false);
-            var recDetails = rec1.ToString();
-            var rec1Area = rec1.GetArea();
+            //foreach (Shape shape in shapes)
+            //{
+            //    Console.WriteLine(shape.GetArea());
+            //}
+
+            Console.ReadKey();
         }
     }
 }
